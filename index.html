@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KL Dev Tech | Sites Profissionais e Pequenos Negócios</title>
+    <meta name="description" content="Sites acessíveis para restaurantes, pequenos negócios e profissionais. Do básico ao avançado, sem complicações.">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="assets/{615A4E04-A3BD-4E81-A15C-00FF820BDB6F}.png">
+</head>
+<body>
+    <div class="bg-decorativo"></div>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <img src="assets/logo3.png" alt="KL Dev Tech" class="logo-img">
+                    <span class="logo-text">KL Dev Tech</span>
+                </div>
+     <ul class="nav-links">
+    <li><a href="#inicio">Início</a></li>
+    <li><a href="#clientes">Para Quem</a></li>
+    <li><a href="#solucoes">Soluções</a></li>
+    <li><a href="#planos">Planos</a></li>
+    <li><a href="#faq">Dúvidas</a></li> <li><a href="#sobre">Sobre</a></li>
+</ul>
+              
+                
+                
+                <button class="menu-toggle" id="menuToggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+        
+        <!-- Menu Mobile -->
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <img src="assets/LOGO.png" alt="KL Dev Tech" class="mobile-logo">
+                <button class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </butto n>
+            </div>
+            <ul class="mobile-nav-links">
+                <li><a href="#inicio"><i class="fas fa-home"></i> Início</a></li>
+                <li><a href="#clientes"><i class="fas fa-users"></i> Para Quem</a></li>
+                <li><a href="#solucoes"><i class="fas fa-laptop-code"></i> Soluções</a></li>
+                <li><a href="#planos"><i class="fas fa-tags"></i> Planos</a></li>
+                <li><a href="#sobre"><i class="fas fa-building"></i> Sobre Nós</a></li>
+                <li><a href="#faq"><i class="fas fa-question-circle"></i> Dúvidas</a></li>
+                <li><a href="https://wa.me/5579998107310?text=Olá! Gostaria de um site para meu negócio" 
+                       class="btn-whatsapp-mobile" target="_blank">
+                    <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                </a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Seu negócio <span class="text-highlight">merece um site profissional</span></h1>
+                    <p class="hero-subtitle">Criamos sites acessíveis e funcionais para <strong>restaurantes, pequenos negócios e profissionais</strong>. Do básico ao avançado, sem complicações.</p>
+                    
+                    <div class="hero-features">
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Pronto em Semanas</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Otimizado para celular</span>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Suporte incluso</span>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-buttons">
+                        <a href="https://wa.me/5579998107310?text=Olá! Quero um orçamento para meu site" 
+                           class="btn btn-primary btn-whatsapp pulsante" target="_blank">
+                            <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                        </a>
+                        <a href="#planos" class="btn btn-secondary">
+                            Ver Planos
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual flutuante">
+                    <div class="demo-site">
+                        <div class="demo-header">
+                            <div class="demo-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="demo-url">seurestaurante.com</div>
+                        </div>
+                        <div class="demo-content">
+                            <div class="demo-restaurant">
+                                <div class="demo-restaurant-header">
+                                    <h4>🍽️ ****</h4>
+                                    <span class="demo-badge">Aberto</span>
+                                </div>
+                                <div class="demo-menu">
+                                    <div class="menu-item">
+                                        <span>Prato Especial</span>
+                                        <span>R$ 38,90</span>
+                                    </div>
+                                    <div class="menu-item">
+                                        <span>Sobremesa</span>
+                                        <span>R$ 18,50</span>
+                                    </div>
+                                </div>
+                                <button class="demo-whatsapp-btn">
+                                    <i class="fab fa-whatsapp"></i> Finalizar pedido
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Para Quem -->
+    <section id="clientes" class="secao bg-light revelar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Especialistas em:</h2>
+                <p class="section-subtitle">Criamos a presença digital ideal para cada tipo de negócio</p>
+            </div>
+            
+            <div class="clients-grid">
+                <div class="client-card revelar">
+                    <div class="client-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Restaurantes & Bares</h3>
+                    <p>Cardápio online, reservas, delivery integrado e fotos apetitosas para atrair mais clientes.</p>
+                    <ul class="client-features">
+                        <li><i class="fas fa-check"></i> Cardápio digital</li>
+                        <li><i class="fas fa-check"></i> Integração WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Fotos profissionais</li>
+                    </ul>
+                </div>
+                
+                <div class="client-card highlight revelar atraso-1">
+                    <div class="client-icon">
+                        <i class="fas fa-store"></i>
+                    </div>
+                    <h3>Pequenos Negócios</h3>
+                    <p>Site institucional completo com catálogo de produtos, localização e contato direto.</p>
+                    <ul class="client-features">
+                        <li><i class="fas fa-check"></i> Catálogo online</li>
+                        <li><i class="fas fa-check"></i> Mapa de localização</li>
+                        <li><i class="fas fa-check"></i> Redes sociais</li>
+                    </ul>
+                </div>
+                
+                <div class="client-card revelar atraso-2">
+                    <div class="client-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>Profissionais</h3>
+                    <p>Portfólio online que mostra seu trabalho e atrai novos clientes para seu serviço.</p>
+                    <ul class="client-features">
+                        <li><i class="fas fa-check"></i> Galeria de projetos</li>
+                        <li><i class="fas fa-check"></i> Depoimentos</li>
+                        <li><i class="fas fa-check"></i> Agenda online</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Soluções -->
+    <section id="solucoes" class="secao revelar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Nossas Soluções</h2>
+                <p class="section-subtitle">Do simples ao completo, temos a solução ideal para você</p>
+            </div>
+            
+            <div class="solutions-grid">
+                <div class="solution-card revelar">
+                    <div class="solution-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3>Site Institucional</h3>
+                    <p>Presença online profissional com todas as informações que seus clientes precisam.</p>
+                    <div class="solution-price">
+                        <span class="price">A partir de</span>
+                        <span class="amount">R$ 450</span>
+                    </div>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Até 5 páginas</li>
+                        <li><i class="fas fa-check"></i> Design responsivo</li>
+                        <li><i class="fas fa-check"></i> Formulário de contato</li>
+                        <li><i class="fas fa-check"></i> Integração redes sociais</li>
+                    </ul>
+                    <a href="https://wa.me/5579998107310?text=Olá! Quero um Site Institucional" 
+                       class="btn btn-outline" target="_blank">
+                        Quero este
+                    </a>
+                </div>
+                
+                <div class="solution-card featured revelar atraso-1">
+                    <div class="solution-badge">Mais Pedido</div>
+                    <div class="solution-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Site + Cardápio</h3>
+                    <p>Ideal para restaurantes: site completo com cardápio digital integrado.</p>
+                    <div class="solution-price">
+                        <span class="price">Investimento</span>
+                        <span class="amount">R$ 850</span>
+                    </div>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Cardápio digital</li>
+                        <li><i class="fas fa-check"></i> Link direto WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Integração delivery</li>
+                        <li><i class="fas fa-check"></i> Pedidos online</li>
+                    </ul>
+                    <a href="https://wa.me/5579998107310?text=Olá! Quero o Site + Cardápio por R$850" 
+                       class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Quero Vender Mais
+                    </a>
+                </div>
+                
+                <div class="solution-card revelar atraso-2">
+                    <div class="solution-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Site Portfólio</h3>
+                    <p>Para profissionais que precisam mostrar seu trabalho e conquistar clientes.</p>
+                    <div class="solution-price">
+                        <span class="price">A partir de</span>
+                        <span class="amount">R$ 650</span>
+                    </div>
+                    <ul class="solution-features">
+                        <li><i class="fas fa-check"></i> Galeria de projetos</li>
+                        <li><i class="fas fa-check"></i> Sobre mim profissional</li>
+                        <li><i class="fas fa-check"></i> Depoimentos</li>
+                        <li><i class="fas fa-check"></i> Contato direto</li>
+                    </ul>
+                    <a href="https://wa.me/5579998107310?text=Olá! Quero um Site Portfólio" 
+                       class="btn btn-outline" target="_blank">
+                        Quero este
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--projetos que ja criei -->
+<section id="portfolio" class="secao revelar">
+    <div class="container">
+        <div class="section-header">
+            <span class="badge">Entrega Completa</span>
+            <h2>Seu Site, Sua Marca</h2>
+            <p class="section-subtitle">Não é apenas um link. É o seu negócio com domínio próprio, hospedagem profissional e design exclusivo.</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <article class="portfolio-card">
+                <div class="portfolio-thumb">
+                    <div class="overlay-card">
+                        <span class="url-mockup">www.nomedasualoja.com</span>
+                    </div>
+                    <div class="placeholder-img" style="background: linear-gradient(45deg, var(--primary), var(--secondary));">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                </div>
+                <div class="portfolio-content">
+                    <div class="portfolio-meta">
+                        <span class="portfolio-tag">Personalizado</span>
+                        <span class="portfolio-status"><i class="fas fa-check-double"></i> 100% Configurado</span>
+                    </div>
+                    <h3>Sites Únicos, Nada de Moldes</h3>
+                    <p>Diferente de sistemas automáticos, aqui cada botão e cada cor é pensado para o seu público local.</p>
+                    <div class="portfolio-features">
+                        <span><i class="fas fa-server"></i> Hospedagem Premium</span>
+                        <span><i class="fas fa-id-card"></i> Domínio Próprio</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="portfolio-card highlight-card">
+                <div class="portfolio-content">
+                    <div class="icon-box"><i class="fas fa-rocket"></i></div>
+                    <h3>Esqueça a parte técnica</h3>
+                    <p>Na KL Dev Tech, você não se preocupa com renovação de servidor ou configuração de e-mail. **Nós cuidamos de tudo.**</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check"></i> Registro de Domínio (.com.br)</li>
+                        <li><i class="fas fa-check"></i> Hospedagem de Alta Velocidade</li>
+                        <li><i class="fas fa-check"></i> SSL (Cadeado de Segurança)</li>
+                        <li><i class="fas fa-check"></i> Suporte Humano via Whats</li>
+                    </ul>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+    <!--PLANOS-->
+
+   <section id="planos" class="secao bg-light revelar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Planos & Assinaturas</h2>
+                <p class="section-subtitle">Tenha seu site profissional pagando uma pequena mensalidade. Sem fidelidade.</p>
+            </div>
+            
+            <div class="plans-grid">
+                <div class="plan-card revelar">
+                    <h3>Site Essencial</h3>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">55,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <p class="plan-description">Presença digital básica e eficiente</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Site Institucional</li>
+                        <li><i class="fas fa-check"></i> Hospedagem <strong>INCLUSA</strong></li>
+                        <li><i class="fas fa-check"></i> Botão WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Suporte Técnico Contínuo</li>
+                        <li><i class="fas fa-check"></i> <strong>Taxa de Adesão: R$ 0</strong></li>
+                    </ul>
+                    
+                    <a href="https://wa.me/5579998107310?text=Olá! Tenho interesse na assinatura do Site Essencial por R$49,90/mês" 
+                       class="btn btn-outline" target="_blank">
+                        Assinar Agora
+                    </a>
+                </div>
+                
+                <div class="plan-card featured revelar atraso-1">
+                    <div class="plan-badge">Mais Escolhido</div>
+                    <h3>Delivery / Loja</h3>
+                    <div class="plan-price">
+                        <span class="currency">R$</span>
+                        <span class="amount">120,90</span>
+                        <span class="period">/mês</span>
+                    </div>
+                    <p class="plan-description">Para quem quer vender online</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> Site + Cardápio Digital</li>
+                        <li><i class="fas fa-check"></i> Hospedagem <strong>INCLUSA</strong></li>
+                        <li><i class="fas fa-check"></i> Atualização de Cardápio</li>
+                        <li><i class="fas fa-check"></i> Suporte <strong>ILIMITADO</strong></li>
+                        <li><i class="fas fa-check"></i> Integração WhatsApp e Pix</li>
+                        <li><i class="fas fa-check"></i> <strong>Taxa de Adesão: R$ 0</strong></li>
+                    </ul>
+                    
+                    <a href="https://wa.me/5579998107310?text=Olá! Quero assinar o plano Delivery por R$89,90/mês para meu negócio" 
+                       class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Assinar Agora
+                    </a>
+                </div>
+                
+                <div class="plan-card revelar atraso-2">
+                    <h3>Personalizado</h3>
+                    <div class="plan-price">
+                        <span class="amount">Sob Consulta</span>
+                    </div>
+                    <p class="plan-description">Para projetos especiais</p>
+                    
+                    <ul class="plan-features">
+                        <li><i class="fas fa-check"></i> E-commerce Completo</li>
+                        <li><i class="fas fa-check"></i> Sistemas Específicos</li>
+                        <li><i class="fas fa-check"></i> Gestor de Pedidos</li>
+                        <li><i class="fas fa-check"></i> Consultoria Dedicada</li>
+                        <li><i class="fas fa-check"></i> Servidor Dedicado</li>
+                    </ul>
+                    
+                    <a href="https://wa.me/5579998107310?text=Olá! Tenho um projeto maior e preciso de um orçamento personalizado" 
+                       class="btn btn-outline" target="_blank">
+                        Falar com Consultor
+                    </a>
+                </div>
+            </div>
+            
+            <div class="plan-notice">
+                <i class="fas fa-info-circle"></i>
+                <p><strong>Como funciona:</strong> Você paga a mensalidade e nós cuidamos de tudo (hospedagem, domínio e manutenção). Se parar de pagar, o site sai do ar. Sem multas de cancelamento.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="secao revelar">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Sobre a KL Dev Tech</h2>
+                    <p class="about-intro">A KL Dev Tech nasceu com um propósito simples: <strong>tornar a presença digital acessível para pequenos negócios e profissionais</strong>.</p>
+                    
+                    <p>Percebemos que muitos empreendedores ficam de fora do mundo digital por achar que sites são caros, complicados ou demorados. Por isso, criamos um processo simples, direto e acessível.</p>
+                    
+                    <div class="about-values">
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Linguagem Clara</h4>
+                                <p>Explicamos tudo de forma simples, sem termos técnicos desnecessários.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Sem Surpresas</h4>
+                                <p>Orçamento fechado, prazo claro e tudo combinado antes de começar.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="value-item">
+                            <div class="value-icon">
+                                <i class="fas fa-hands-helping"></i>
+                            </div>
+                            <div class="value-content">
+                                <h4>Foco no Cliente</h4>
+                                <p>Nosso sucesso é medido pelo sucesso do seu site em atrair clientes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/5579998107310?text=Olá! Gostaria de conversar sobre um site para meu negócio" 
+                       class="btn btn-primary" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Falar Conosco
+                    </a>
+                </div>
+                
+                <div class="about-image flutuante">
+                    <div class="image-container">
+                        <div class="image-card">
+                            <i class="fas fa-laptop-code"></i>
+                            <div class="image-stats">
+                                <div class="stat">
+                                    <span class="stat-number">10+</span>
+                                    <span class="stat-label">Projetos</span>
+                                </div>
+                                <div class="stat">
+                                    <span class="stat-number">100%</span>
+                                    <span class="stat-label">Clientes Satisfeitos</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- duvidas -->
+    <section id="faq" class="secao bg-light revelar">
+        <div class="container">
+            <div class="section-header">
+                <h2>Dúvidas Frequentes</h2>
+                <p class="section-subtitle">Tire suas dúvidas sobre como funciona a criação do seu site</p>
+            </div>
+
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <details>
+                        <summary>Quanto tempo demora para o site ficar pronto?</summary>
+                        <p>Para sites institucionais e cardápios digitais, o prazo médio é de 5 a 10 dias úteis após o envio de todo o material (textos e fotos).</p>
+                    </details>
+                </div>
+
+              <div class="faq-item">
+    <details>
+        <summary>Eu preciso contratar hospedagem ou domínio por fora?</summary>
+        <p><strong>Não!</strong> Esse é o nosso maior diferencial. Enquanto outras empresas te dão apenas o sistema, nós entregamos o site pronto com <strong>seu domínio próprio</strong> (ex: www.sualoja.com ou www.sualoja.com.br) é <strong>hospedagem inclusa</strong>. Você não precisa entender de tecnologia, nós cuidamos da parte chata para você.</p>
+    </details>
+</div>
+                <div class="faq-item">
+                    <details>
+                        <summary>O site funciona no celular (Responsivo)?</summary>
+                        <p>Sim! Todos os nossos sites são desenvolvidos com tecnologia "Mobile First", ou seja, são pensados primeiro para ficar perfeitos na tela do celular e tablets.</p>
+                    </details>
+                </div>
+
+                <div class="faq-item">
+                    <details>
+                        <summary>Como funciona o pagamento?</summary>
+                        <p>Para compra do site avulso: 50% de entrada e 50% na entrega. Para assinaturas mensais: pagamento via PIX ou Boleto todo mês, sem fidelidade (pode cancelar quando quiser).</p>
+                    </details>
+                </div>
+
+                <div class="faq-item">
+                    <details>
+                        <summary>Consigo atualizar o cardápio ou textos depois?</summary>
+                        <p>Sim! No plano Delivery, você pode solicitar alterações no cardápio. Para sites institucionais, pequenas alterações de texto estão inclusas no suporte.</p>
+                    </details>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Seção Contato -->
+    <section id="contato" class="secao bg-light revelar">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Pronto para ter seu site?</h2>
+                    <p class="contact-subtitle">Entre em contato agora mesmo e receba um orçamento em até 24h.</p>
+                    
+                 
+                     
+                        
+                
+                    
+                    <div class="social-links">
+                        <a href="#" class="social-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="#" class="social-link">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Solicite um Orçamento</h3>
+                    <form id="formulario-orcamento">
+                        <input type="text" id="campo-oculto" name="campo-oculto" style="display:none;">
+                        
+                        <div class="form-group">
+                            <label for="nome">Seu Nome</label>
+                            <input type="text" id="nome" placeholder="Como prefere ser chamado" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="negocio">Seu Negócio</label>
+                            <select id="negocio">
+                                <option value="">Selecione uma opção</option>
+                                <option value="Restaurante">Restaurante/Café/Lanchonete</option>
+                                <option value="Loja">Loja/Comércio</option>
+                                <option value="Servico">Serviço/Profissional</option>
+                                <option value="Outro">Outro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="whatsapp">WhatsApp</label>
+                            <input type="tel" id="whatsapp" placeholder="(00) 00000-0000" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensagem">Conte sobre seu projeto</label>
+                            <textarea id="mensagem" placeholder="Fale um pouco sobre o que você precisa..." rows="4"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fab fa-whatsapp"></i> Solicitar Orçamento Grátis
+                        </button>
+                        
+                        <p class="form-notice">Entraremos em contato em até 24 horas úteis.</p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo2.png" alt="KL Dev Tech">
+                        <span>KL Dev Tech</span>
+                    </div>
+                    <p class="footer-description">Criamos sites acessíveis e funcionais para pequenos negócios e profissionais.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Links Rápidos</h4>
+                    <ul class="footer-links">
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#clientes">Para Quem</a></li>
+                        <li><a href="#solucoes">Soluções</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#sobre">Sobre Nós</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fab fa-whatsapp"></i>
+                            <span>(79) 99810-7310</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span>contato@kldevtech.com</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/5579998107310?text=Olá! Gostaria de um orçamento para meu site" 
+                       class="btn btn-outline btn-footer" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Falar no WhatsApp
+                    </a>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>© 2025 KL Dev Tech. Todos os direitos reservados.</p>
+                <p class="footer-note">Desenvolvido com ❤️ para pequenos negócios brasileiros.</p>
+            </div>
+        </div>
+    </footer>
+
+  
+
+    <!-- JavaScript -->
+    <script src="lscript.js" defer></script>
+</body>
+</html>
