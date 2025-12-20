@@ -1,6 +1,4 @@
-// KL DEV TECH - JavaScript Completo com Efeitos de Landing Page
 // Scroll animado + WhatsApp + Animações profissionais
-
 document.addEventListener('DOMContentLoaded', () => {
     iniciarAnimacaoScrollLanding();
     iniciarGerenciadorFormulario();
@@ -15,10 +13,9 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarTempoNoSite();
 });
 
-/* === 1. ANIMAÇÃO DE LANDING PAGE COM SCROLL === */
+ //1. ANIMAÇÃO DE LANDING PAGE COM SCROLL
 function iniciarAnimacaoScrollLanding() {
     const elementosRevelar = document.querySelectorAll('.revelar');
-    
     const config = {
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px'
@@ -71,7 +68,7 @@ function iniciarAnimacaoScrollLanding() {
     });
 }
 
-/* === 2. PARALLAX BACKGROUND === */
+// 2. PARALLAX BACKGROUNG
 function iniciarBackgroundParallax() {
     const bgDecorativo = document.querySelector('.bg-decorativo');
     
@@ -84,8 +81,7 @@ function iniciarBackgroundParallax() {
         });
     }
 }
-
-/* === 3. FORMULÁRIO WHATSAPP === */
+// 3. FORMULÁRIO WHATSAPP 
 function iniciarGerenciadorFormulario() {
     const formulario = document.getElementById('formulario-orcamento');
     
@@ -125,10 +121,8 @@ function iniciarGerenciadorFormulario() {
                 `⏱️ *Enviado em:* ${new Date().toLocaleString('pt-BR')}`;
 
             const urlWhatsapp = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(textoMensagem)}`;
-            
             const botao = formulario.querySelector('button');
-            const textoOriginal = botao.innerHTML;
-            
+            const textoOriginal = botao.innerHTML; 
             botao.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando...';
             botao.style.opacity = '0.8';
             botao.disabled = true;
@@ -143,14 +137,13 @@ function iniciarGerenciadorFormulario() {
                     botao.disabled = false;
                     
                     mostrarFeedbackSucesso();
-                }, 2000);
-                
+                }, 2000);     
             }, 500);
         });
     }
 }
 
-/* === 4. MENU MOBILE === */
+//4. MENU MOBILE 
 function iniciarMenuMobile() {
     const menuToggle = document.getElementById('menuToggle');
     const mobileMenu = document.getElementById('mobileMenu');
@@ -163,14 +156,12 @@ function iniciarMenuMobile() {
             document.body.style.overflow = 'hidden';
         });
     }
-
     if (closeMenu) {
         closeMenu.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
             document.body.style.overflow = '';
         });
     }
-
     mobileLinks.forEach(link => {
         link.addEventListener('click', () => {
             mobileMenu.classList.remove('active');
@@ -179,7 +170,7 @@ function iniciarMenuMobile() {
     });
 }
 
-/* === 5. MÁSCARAS DE INPUT === */
+// 5. MÁSCARAS DE INPUT 
 function iniciarMascarasInput() {
     const phoneInput = document.getElementById('whatsapp');
     
@@ -190,7 +181,6 @@ function iniciarMascarasInput() {
             if (value.length > 11) {
                 value = value.substring(0, 11);
             }
-            
             if (value.length > 10) {
                 value = value.replace(/^(\d{2})(\d{5})(\d{4}).*/, '($1) $2-$3');
             } else if (value.length > 6) {
@@ -200,7 +190,6 @@ function iniciarMascarasInput() {
             } else if (value.length > 0) {
                 value = value.replace(/^(\d*)/, '($1');
             }
-            
             e.target.value = value;
         });
     }
@@ -217,8 +206,7 @@ function iniciarContadoresVisuais() {
                 const valorFinal = parseInt(elemento.textContent) || 50;
                 const duracao = 2000;
                 const incremento = Math.ceil(valorFinal / 50);
-                let valorAtual = 0;
-                
+                let valorAtual = 0; 
                 const timer = setInterval(() => {
                     valorAtual += incremento;
                     if (valorAtual >= valorFinal) {
@@ -236,10 +224,9 @@ function iniciarContadoresVisuais() {
     elementosContador.forEach(el => observerContador.observe(el));
 }
 
-/* === 7. DESTACAR PLANOS === */
+// 7. DESTACAR PLANOS
 function iniciarDestacarPlanos() {
     const cardsPlano = document.querySelectorAll('.plan-card, .solution-card');
-    
     cardsPlano.forEach(card => {
         card.addEventListener('mouseenter', () => {
             if (!card.classList.contains('featured')) {
@@ -247,7 +234,6 @@ function iniciarDestacarPlanos() {
                 card.style.boxShadow = '0 20px 40px rgba(37, 99, 235, 0.15)';
             }
         });
-        
         card.addEventListener('mouseleave', () => {
             if (!card.classList.contains('featured')) {
                 card.style.transform = '';
@@ -257,7 +243,7 @@ function iniciarDestacarPlanos() {
     });
 }
 
-/* === 8. EFEITO MENU SCROLL === */
+// 8. EFEITO MENU SCROLL 
 function efeitoMenuScroll() {
     const header = document.querySelector('.header');
     
@@ -290,9 +276,7 @@ function iniciarDemonstracaoInterativa() {
             setTimeout(() => {
                 demoBtn.innerHTML = '<i class="fas fa-check"></i> Simulado!';
                 demoBtn.style.background = '#10b981';
-                
-                mostrarNotificacao('Pedido simulado! Em um site real, abriria o WhatsApp.');
-                
+                mostrarNotificacao('Pedido simulado! Em um site real, abriria o WhatsApp. Geraria uma Integração Exemplo: Nome, numero, hora e data do pedido.(tudo pode ser alterado de acordo com a necessidade.)');
                 setTimeout(() => {
                     demoBtn.innerHTML = '<i class="fab fa-whatsapp"></i> Pedir via WhatsApp';
                     demoBtn.style.background = '';
