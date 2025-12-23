@@ -1,8 +1,5 @@
-/* ============================================
-   KL DEV TECH - CSS COMPLETO COM EFEITOS
-   Design moderno + Animações de landing page
-============================================ */
-
+/*
+   Design moderno + Animações de landing page */
 /* 1. VARIÁVEIS E RESET */
 :root {
     --primary: #2563eb;
@@ -10,7 +7,7 @@
     --primary-light: #eff6ff;
     --secondary: #10b981;
     --secondary-dark: #0da271;
-    --whatsapp: #25d366;
+    --whatsapp: #2a573b;
     --whatsapp-dark: #128c7e;
     --dark: #1e293b;
     --dark-light: #334155;
