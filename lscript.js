@@ -12,15 +12,13 @@ document.addEventListener('DOMContentLoaded', () => {
     iniciarRolagemSuave();
     iniciarTempoNoSite();
 });
-
  //1. ANIMAÇÃO DE LANDING PAGE COM SCROLL
 function iniciarAnimacaoScrollLanding() {
     const elementosRevelar = document.querySelectorAll('.revelar');
     const config = {
         threshold: 0.1,
         rootMargin: '0px 0px -100px 0px'
-    };
-    
+    };   
     if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
@@ -43,20 +41,16 @@ function iniciarAnimacaoScrollLanding() {
     } else {
         const revelarFallback = () => {
             const alturaJanela = window.innerHeight;
-            
             elementosRevelar.forEach((elemento) => {
                 const topoElemento = elemento.getBoundingClientRect().top;
-                
                 if (topoElemento < alturaJanela - 100) {
                     elemento.classList.add('ativo');
                 }
             });
-        };
-        
+        };     
         window.addEventListener('scroll', revelarFallback);
         revelarFallback();
-    }
-    
+    }  
     // Animação cascata para hero
     const heroElements = document.querySelectorAll('.hero .revelar');
     heroElements.forEach((el, index) => {
@@ -94,24 +88,19 @@ function iniciarGerenciadorFormulario() {
                 console.log('Possível SPAM detectado');
                 return;
             }
-
             const nome = document.getElementById('nome').value.trim();
             const plano = document.getElementById('negocio').value;
             const whatsapp = document.getElementById('whatsapp').value.trim();
             const mensagem = document.getElementById('mensagem').value.trim();
-            
             const telefoneDestino = '5579998107310';
-
-            if (nome.length < 2) {
+            if (nome.length < 5) {
                 alert('Por favor, informe seu nome completo.');
                 return;
             }
-
             if (whatsapp.length < 11) {
                 alert('Por favor, insira um número de WhatsApp válido com DDD.');
                 return;
             }
-
             const textoMensagem = 
                 `🚀 *NOVA SOLICITAÇÃO - KL DEV TECH*\n\n` +
                 `👤 *Nome:* ${nome}\n` +
@@ -119,7 +108,6 @@ function iniciarGerenciadorFormulario() {
                 `📱 *WhatsApp:* ${whatsapp}\n\n` +
                 `📝 *Detalhes do Projeto:*\n${mensagem || 'Não informado'}\n\n` +
                 `⏱️ *Enviado em:* ${new Date().toLocaleString('pt-BR')}`;
-
             const urlWhatsapp = `https://wa.me/${telefoneDestino}?text=${encodeURIComponent(textoMensagem)}`;
             const botao = formulario.querySelector('button');
             const textoOriginal = botao.innerHTML; 
@@ -311,10 +299,9 @@ function iniciarRolagemSuave() {
     });
 }
 
-/* === 11. TEMPO NO SITE === */
+// 11. TEMPO NO SITE
 function iniciarTempoNoSite() {
-    let tempoNoSite = 0;
-    
+    let tempoNoSite = 0;  
     const contador = setInterval(() => {
         tempoNoSite++;
         
