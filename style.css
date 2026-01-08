@@ -1,6 +1,5 @@
 /*
-   Design moderno + Animações de landing page */
-/* 1. VARIÁVEIS E RESET */
+    ESTILOS GERAIS DO SITE 1. VARIÁVEIS E RESET */
 :root {
     --primary: #2563eb;
     --primary-dark: #1e40af;
@@ -178,6 +177,8 @@ body {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
+    background-color: #0B1220;
+    
 }
 
 .header.scrolled {
@@ -199,7 +200,7 @@ body {
 }
 
 .logo-img {
-    height: 40px;
+    height: 50px;
     width: auto;
 }
 
@@ -731,7 +732,6 @@ h1 {
     gap: 2rem;
     padding: 1rem 0;
 }
-
 .portfolio-card {
     background: var(--white);
     border-radius: var(--radius-md);
@@ -748,15 +748,30 @@ h1 {
     box-shadow: var(--shadow-md);
     border-color: var(--primary-light);
 }
-
-.portfolio-thumb {
+#ivella{
     width: 100%;
     height: 200px;
+}
+.portfolio-thumb {
+    width: 100%;
+    height: 250px;
     overflow: hidden;
     position: relative;
 }
-
-/* Isso aqui simula a imagem enquanto você não coloca prints reais */
+.btn-project {
+width: 100%;
+height: 40px;
+cursor: pointer;
+background-color: #8b5cf6;
+color: white;
+border: none;
+border-radius: 100px;
+}
+.btn-project:hover {
+    background-color: #d369fd;
+    transition: all 3s ease;
+}
+/*simula imagens*/
 .placeholder-img {
     width: 100%;
     height: 100%;
@@ -767,7 +782,7 @@ h1 {
     font-size: 3rem;
 }
 
-/* Quando você colocar imagens reais <img>, elas ficarão assim: */
+/*imagens reais <img>, elas ficarão aq: */
 .portfolio-thumb img {
     width: 100%;
     height: 100%;
@@ -1487,6 +1502,7 @@ h1 {
     transition: right 0.3s ease;
     padding: 2rem;
     overflow-y: auto;
+    
 }
 
 .mobile-menu.active {
