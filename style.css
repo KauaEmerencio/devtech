@@ -225,6 +225,7 @@ body {
     transition: color 0.3s;
     position: relative;
     padding: 0.5rem 0;
+    color: white;
 }
 
 .nav-links a:hover {
