@@ -1,4 +1,7 @@
 // Scroll animado + WhatsApp + Animações profissionais
+document.documentElement.lang = 'pt-BR';
+
+
 document.addEventListener('DOMContentLoaded', () => {
     iniciarAnimacaoScrollLanding();
     iniciarGerenciadorFormulario();
@@ -424,5 +427,10 @@ window.KLDevTech = {
         window.open(`https://wa.me/5579998107310?text=${mensagemCodificada}`, '_blank');
     }
 };
+//interação botões portfolio
+const btn = document.querySelector('.btn-project');
 
-console.log('🚀 KL Dev Tech - Site carregado com efeitos de landing page!');
+btn.addEventListener('click', () => {
+    window.open('https://ivella.com.br', '_blank');
+});
+console.log('🚀 KL Dev Tech - o seu site!');
