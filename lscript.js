@@ -185,7 +185,6 @@ function iniciarMascarasInput() {
         });
     }
 }
-
 /* === 6. CONTADORES VISUAIS === */
 function iniciarContadoresVisuais() {
     const elementosContador = document.querySelectorAll('.stat-number');
@@ -301,7 +300,6 @@ function iniciarRolagemSuave() {
         });
     });
 }
-
 // 11. TEMPO NO SITE
 function iniciarTempoNoSite() {
     let tempoNoSite = 0;  
