@@ -177,7 +177,7 @@ body {
     top: 0;
     z-index: 1000;
     transition: all 0.3s ease;
-    background-color: #0B1220;
+    background-color: #0d1422;
     
 }
 
@@ -204,13 +204,6 @@ body {
     width: auto;
 }
 
-.logo-text {
-    font-family: var(--font-heading);
-    font-weight: 700;
-    font-size: 1.25rem;
-    color: var(--dark);
-}
-
 .nav-links {
     display: flex;
     list-style: none;
@@ -219,7 +212,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--dark-light);
+    color: var(--primary);
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s;
@@ -1515,7 +1508,7 @@ border-radius: 100px;
     align-items: center;
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid var(--gray-light);
+    border-bottom: 1px solid var(--white);
 }
 
 .mobile-logo {
