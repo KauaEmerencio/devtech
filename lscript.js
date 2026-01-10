@@ -236,20 +236,22 @@ function iniciarDestacarPlanos() {
 // 8. EFEITO MENU SCROLL 
 function efeitoMenuScroll() {
     const header = document.querySelector('.header');
-    
-    if(header) {
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.1)";
-                header.style.background = "rgba(255, 255, 255, 0.98)";
-                header.style.backdropFilter = "blur(10px)";
-            } else {
-                header.style.boxShadow = "none";
-                header.style.background = "#ffffff";
-                header.style.backdropFilter = "none";
-            }
-        });
-    }
+    if (!header) return;
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            header.style.boxShadow = `
+                0 6px 30px rgba(0, 0, 0, 0.35),
+                inset 0 -1px 0 rgba(255, 255, 255, 0.05)
+            `;
+            header.style.background = "rgba(13, 20, 34, 0.98)";
+            header.style.backdropFilter = "blur(6px)";
+        } else {
+            header.style.boxShadow = "none";
+            header.style.background = "rgba(13, 20, 34, 1)";
+            header.style.backdropFilter = "none";
+        }
+    });
 }
 
 /* === 9. DEMONSTRAÇÃO INTERATIVA === */
@@ -426,9 +428,11 @@ window.KLDevTech = {
     }
 };
 //interação botões portfolio
-const btn = document.querySelector('.btn-project');
-
-btn.addEventListener('click', () => {
-    window.open('https://ivella.com.br', '_blank');
+document.querySelectorAll('.btn-project').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const link = btn.getAttribute('data-link');
+        if (link) {
+            window.open(link, '_blank');
+        }
+    });
 });
-console.log('🚀 KL Dev Tech - o seu site!');
