@@ -1,7 +1,5 @@
 // Scroll animado + WhatsApp + Animações profissionais
 document.documentElement.lang = 'pt-BR';
-
-
 document.addEventListener('DOMContentLoaded', () => {
     iniciarAnimacaoScrollLanding();
     iniciarGerenciadorFormulario();
@@ -436,3 +434,4 @@ document.querySelectorAll('.btn-project').forEach(btn => {
         }
     });
 });
+
