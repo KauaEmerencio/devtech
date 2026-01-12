@@ -222,7 +222,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--primary-dark);
+    color: var(--primary);
 }
 
 .nav-links a::after {
@@ -268,6 +268,7 @@ body {
     color: var(--dark);
     cursor: pointer;
     padding: 0.5rem;
+    color: #d9cfee;
 }
 
 /* 7. HERO SECTION */
