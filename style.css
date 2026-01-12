@@ -208,11 +208,12 @@ body {
     display: flex;
     list-style: none;
     gap: 2.5rem;
+
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary);
+    color: whitesmoke;
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s;
@@ -221,7 +222,7 @@ body {
 }
 
 .nav-links a:hover {
-    color: var(--primary);
+    color: var(--primary-dark);
 }
 
 .nav-links a::after {
