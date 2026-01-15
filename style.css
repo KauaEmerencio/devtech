@@ -208,11 +208,12 @@ body {
     display: flex;
     list-style: none;
     gap: 2.5rem;
+
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--primary);
+    color: whitesmoke;
     font-weight: 600;
     font-size: 1rem;
     transition: color 0.3s;
@@ -268,6 +269,7 @@ body {
     color: var(--dark);
     cursor: pointer;
     padding: 0.5rem;
+    color: #d9cfee;
 }
 
 /* 7. HERO SECTION */
