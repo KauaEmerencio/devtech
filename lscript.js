@@ -71,7 +71,7 @@ function iniciarBackgroundParallax() {
         window.addEventListener('scroll', () => {
             const scrollY = window.scrollY;
             const speed = 0.3;
-            
+
             bgDecorativo.style.transform = `translateY(${scrollY * speed}px)`;
         });
     }
@@ -115,10 +115,8 @@ function iniciarGerenciadorFormulario() {
             botao.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Preparando...';
             botao.style.opacity = '0.8';
             botao.disabled = true;
-
             setTimeout(() => {
-                window.open(urlWhatsapp, '_blank');
-                
+                        window.open(urlWhatsapp, '_blank');
                 setTimeout(() => {
                     formulario.reset();
                     botao.innerHTML = textoOriginal;
